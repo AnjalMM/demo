@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    color: bisque;
+}
+.header{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+    font-size: 25px;
+    color: aliceblue;
+    text-decoration: none;
+    font-weight: 600;
+
+}
+.navbar a{
+    font-size: 16px;
+    color: azure;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+
+}
+.navbar a:hover,
+.navbar a.active{
+    color: aqua;
+}
+
+.home{
+    height: 100vh;
+    background-image: url('imaganj.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    animation: step-start;
+    
+}
+.home-features{
+    max-width: 600px;
+}
+.home-features h2{
+    font-size: 46px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.home-features h3{
+    font-size: 32px;
+    font-weight: 700;
+    color: aqua;
+}
+.home-features p{
+    font-size: 15px;
+    font-weight: 700;
+    margin: 20px 0 40px;
+}
+.home-features .btn-box{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+     height: 50px;
+     width: 350px;
+     
+}
+.btn-box a{
+    display: inline-flex;
+    height: 100%;
+    width: 150px;
+    background-color: aqua;
+    border: 2px solid;
+    border-radius: 15px;
+    font-size: 19px;
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 3px;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    overflow: auto;    
+}
+.btn-box a:nth-child(2){
+    background-color: transparent;
+    color: aqua;
+
+}
+.btn-box a:hover:nth-child(2){
+    width: 50%;
+    color: #020024;
+    transition: .5s;
+}
+.btn-box a:before{
+    content: '';
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 0%;
+    height: 100%;
+    background: #020024;
+    z-index: -5;
+    transition: .8S;
+    
+}
+.btn-box a:hover::before,
+.btn-box a{
+    border-radius: 15px;
+    width: 48%;
+
+}
+.home-sci{
+    position: absolute;
+    bottom: 40px;
+    width: 240px;
+    display: flex;
+    justify-content: space-between;
+}
+.home-sci a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid aqua;
+    border-radius: 50%;
+    font-size: 20px;
+    color: aqua;
+    text-decoration: none;
+
+}
